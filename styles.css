@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+    background: white;
+    page-break-inside: avoid;
+}
+.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    background: #003366;
+    color: white;
+    padding: 20px;
+}
+.header img {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 117px;
+    height: 120px;
+    border-radius: 50%;
+}
+.contact {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    background: #00509e;
+    color: white;
+    padding: 10px;
+}
+.contact a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+.section {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e6e6e6;
+    border-left: 5px solid #003366;
+    page-break-inside: avoid;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    color: #003366;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
+ul {
+    margin: 5px 0;
+    padding-left: 15px;
+}
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    background: #e6e6e6;
+    padding: 10px;
+    page-break-inside: avoid;
+}
+.flex-section div {
+    width: 48%;
+}
+.divider {
+    border-top: 2px solid black;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.experience-entry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.download{
+    text-align:right;
+}
+.download button {
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.download button:hover {
+    background: #003366;
+}
