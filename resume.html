@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshal Khadatare - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2a5c84;
+            --secondary-color: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the top */
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            overflow: hidden;
+            margin-left: 1.5rem;
+            flex-shrink: 0; /* Prevents the image from shrinking */
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .header h3 {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #1a3a5a;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .section-content {
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item h3 {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .timeline-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .timeline-item ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .timeline-item ul li {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Updated Technical Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .certification-item {
+            margin-bottom: 1rem;
+        }
+
+        .certification-item h3 {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .certification-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .certification-item ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .certification-item ul li {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.3rem;
+        }
+
+        .interests-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .interest-item {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .languages-list {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .language-item {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        @media print {
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1>Harshal Ganapati Khadatare</h1>
+                <h3>Software Developer</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Solapur, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+919075768742</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>khadtareharshal2002@gmail.com</span>
+                    </div>
+                </div>
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harshal-khadatare-9882ab23a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Harshroo45" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://leetcode.com/Harshhh_45" target="_blank"><i class="fas fa-code"></i></a>
+                    <a href="https://harshal-khadatare.vercel.app/" target="_blank"><i class="fas fa-briefcase"></i></a>
+                </div>
+            </div>
+            <!-- Profile Image -->
+            <div class="profile-image">
+                <img src="/profile/Harshal_Ganapati_Khadatare.jpg" alt="Harshal Khadatare">
+            </div>
+        </header>
+
+        <!-- Summary Section -->
+        <section class="section">
+            <h2 class="section-title">Summary</h2>
+            <div class="section-content">
+                <p>Computer Science Graduate with programming skills and experience with software development projects. Passionate about dedication to teamwork in high-performance environments, growing as a technical expert, and contributing to project success.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <div class="timeline-item">
+                    <h3>Master of Computer Applications</h3>
+                    <p>Shri Vithal Education and Research Institute's College of Engineering, Pandharpur</p>
+                    <p>2023 - 2025</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p>Vidnyan Mahavidyalay Sangola</p>
+                    <p>2020 - 2023 | GPA: 8.86</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>12th (HSC)</h3>
+                    <p>Shri Shivaji Vidyalaya and Jr. College Mahud BK</p>
+                    <p>2020 | Percentage: 63%</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>10th (SSC)</h3>
+                    <p>Shri Shivaji Vidyalaya and Jr. College Mahud BK</p>
+                    <p>2018 | Percentage: 74%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-content">
+                <div class="timeline-item">
+                    <h3>Chatbot using NLP</h3>
+                    <p>Nov 2024 – Dec 2024</p>
+                    <ul>
+                        <li>Built a machine learning-based chatbot using NLP.</li>
+                        <li>Tools: Jupyter Notebook, MySQL</li>
+                        <li>Libraries: NLTK, SpaCy, OpenAI API, TensorFlow, NumPy, Flask, Streamlit</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Farmer-Customer Marketplace</h3>
+                    <p>Sep 2024 – Oct 2024</p>
+                    <ul>
+                        <li>Developed a Flask-based web application for farmers to sell products directly to customers.</li>
+                        <li>Eliminated middlemen and increased farmer profits.</li>
+                        <li>Technologies: Python, Flask, Flask-SQL Alchemy, Git, MySQL</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>City Space Parking</h3>
+                    <p>May 2023 – July 2023</p>
+                    <ul>
+                        <li>Developed an interactive web application for real-time parking availability and reservation.</li>
+                        <li>Technologies: Java, Spring Boot, MySQL, JDBC</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Post Office Management System</h3>
+                    <p>Feb 2022 – March 2022</p>
+                    <ul>
+                        <li>Developed a system using C# based on Microsoft .Net and SQL Server.</li>
+                        <li>Functionality: Real-time tracking, appointment booking, and user-friendly login interface.</li>
+                        <li>Developed a database on SQL Server to store customer details and packages.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-item">Java (OOP, Multithreading, MySQL, RESTful APIs)</div>
+                    <div class="skill-item">SQL & MySQL (Stored Procedures, Database Design, Joins, Subqueries)</div>
+                    <div class="skill-item">.NET Framework (C#, ADO.NET, Entity Framework, MVC, ASP.NET)</div>
+                    <div class="skill-item">PHP (OOP, MVC Architecture)</div>
+                    <div class="skill-item">Python (Agile Development, OOP, NumPy, Flask)</div>
+                    <div class="skill-item">Git & GitHub (Intermediate)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="section-content">
+                <div class="certification-item">
+                    <h3>Java Certification Course</h3>
+                    <p>Fourise Software Solutions, Pune | 2024</p>
+                    <ul>
+                        <li>Skilled in OOP, data structures, and multithreading for scalable Java applications.</li>
+                        <li>Learned exception handling, Java libraries, and database integration.</li>
+                    </ul>
+                </div>
+                <div class="certification-item">
+                    <h3>Career Essentials in Generative AI</h3>
+                    <p>Microsoft & LinkedIn | 2024</p>
+                    <ul>
+                        <li>Learned techniques in AI and machine learning for generative models.</li>
+                        <li>Leveraged AI tools for automation and data-driven decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="section">
+            <h2 class="section-title">Interests</h2>
+            <div class="section-content">
+                <div class="interests-list">
+                    <div class="interest-item">Sketching</div>
+                    <div class="interest-item">Gaming</div>
+                    <div class="interest-item">Fitness</div>
+                    <div class="interest-item">Travelling</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="section-content">
+                <div class="languages-list">
+                    <div class="language-item">English</div>
+                    <div class="language-item">Hindi</div>
+                    <div class="language-item">Marathi</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
