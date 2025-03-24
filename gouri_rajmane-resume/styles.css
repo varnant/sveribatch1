@@ -89,3 +89,16 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+.download button {
+    background: #00509e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.download button:hover {
+    background: #003366;
+}
