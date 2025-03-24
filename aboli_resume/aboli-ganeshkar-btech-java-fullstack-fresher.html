@@ -1,15 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aboli-resume</title>
-</head>
-<body>
-    <div>
-    <h1>Aboli Ganeshkar</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 5px solid #ddd;
+            /* Page border around the whole page */
+            height: 100%;
+            box-sizing: border-box;
+        }
 
-    <img src="./image/logo.jpg.jpeg" alt="" height="30px" width="50px">
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 0 auto;
+            /* Ensures it's centered horizontally */
+            position: relative;
+            /* To position logo within container */
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            /* Position logo absolutely within container */
+            top: 20px;
+            right: 20px;
+            /* Align to the right */
+        }
+
+        h1 {
+            color: #0073b1;
+        }
+
+        h2 {
+            color: #d35400;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aboli Ganeshkar</h1>
+        <div class="header">
+
+            <img src="./image/logo.jpg.jpeg" alt="" >
+        </div>
+        <div class="contact-info">
+            <span>📞 9309750025</span> |
+            <a href="mailto:aboliganeshkar2020@gmail.com">✉️ aboliganeshkar2020@gmail.com</a> |
+            <a href="https://linkedin.com/in/aboli-ganeshkar-34a837249/">🔗
+                https://linkedin.com/in/aboli-ganeshkar-34a837249/</a> |
+            <a href="https://github.com/aboliganeshkar">💻 https://github.com/aboliganeshkar</a>
+        </div>
+
+        <h2>Career Objective</h2>
+        <p>Aspiring to a challenging software development role to leverage technical skills and drive innovative
+            solutions, aiming to contribute to the development of cutting-edge technologies while improving my
+            professional expertise in various aspects of software engineering and development. Eager to collaborate with
+            talented professionals to solve complex problems and grow in a dynamic work environment.</p>
+        <hr>
+
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>B.Tech CSE</td>
+                <td>SVERI’s College of Engineering, Pandharpur</td>
+                <td>2021 – 2025</td>
+                <td>CGPA: 9.05</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>Shri Sant Damaji Mahavidyalay, Mangalwedha</td>
+                <td>2020 – 2021</td>
+                <td>88.33%</td>
+            </tr>
+            <tr>
+                <td>SSC</td>
+                <td>English School, Mangalwedha</td>
+                <td>2018 – 2019</td>
+                <td>74.20%</td>
+            </tr>
+        </table>
+        <hr>
+
     </div>
 </body>
+
 </html>
