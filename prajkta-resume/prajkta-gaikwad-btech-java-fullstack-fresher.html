@@ -168,7 +168,42 @@
                     <li>Gained experience in performing statistical analysis and generating insights from complex datasets.</li>
                 </ul>
             </ul>
+            <h3 class="section-header">ACHIEVEMENTS & CERTIFICATIONS</h3>
+            <ul>
+                <li>Salesforce Certified Platform Developer | Course (Udemy)</li>
+                <li>Python | Course (Udemy)</li>
+               
+            </ul>
     
+            <hr>
+    
+            <div class="signature">
+                <div>
+                    <h4><u>Place</u>: Pandharpur</h4>
+                </div>
+                <div style="text-align: right;">
+                    <h4><u>Name</u>: Prajkta Vijay Gaikwad</h4>
+                    <button class="btn-download" onclick="downloadPDF()">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            async function downloadPDF() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF('p', 'mm', 'a4');
+                const resume = document.getElementById('resume');
+    
+                const canvas = await html2canvas(resume, { scale: 2 });
+                const imgData = canvas.toDataURL('image/png');
+    
+                const imgWidth = 210; 
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    
+                doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                doc.save("Resume_Prajkta_Gaikwad.pdf");
+            }
+        </script>
     
 
     </div>
