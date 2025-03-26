@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajkta-resume</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       
+
+        hr {
+            border: 1px solid #333;
+        }
+
+        .section-header {
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .signature div {
+            width: 45%;
+        }
+        .btn-download{
+            background-color: #0073b1;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="resume" >
+        <div class="container" id="resume">
+            <center>
+                <h1><u>RESUME</u></h1>
+            </center>
+           
+    
+    
+            <h2>Prajkta Vijay Gaikwad</h2>
+            <h3>Email ID: <span style="color:blue">prajktagaikwad12345@gmail.com</span></h3>
+            <h3>Contact No: +91 9156227322</h3>
+            
+            
+            
+            <hr>
+    
+            <h3 class="section-header">CAREER OBJECTIVE</h3>
+            <p> Passionate aspiring software developer skilled in C, Python, HTML, CSS, and JavaScript. Dedicated to
+                crafting innovative solutions and contributing to impactful projects. Committed to continuous learning and
+                delivering high-quality results in programming and web development.</p>
+    
+            <h3 class="section-header">ACADEMIC QUALIFICATIONS</h3>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Board/University</th>
+                    <th>School/College</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>BTech</td>
+                    <td>Punsholk Ahilyadevi Holkar University, Solapur</td>
+                    <td>Sveri’s College Of Engineering, Pandharpur</td>
+                    <td>Pursuing</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Maharashtra State Board of Secondary and Higher Secondary Education</td>
+                    <td>Shri Mhankali Highschool and Jr.College, Kavathe Mahankal</td>
+                    <td>88.33%</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Maharashtra State Board of Secondary and Higher Secondary Education</td>
+                    <td>Shri Nath Vidyalaya Sonake</td>
+                    <td>82.40%</td>
+                </tr>
+            </table>
+            <h3 class="section-header">TECHNICAL SKILLS AND INTERESTS</h3>
+            <ul>
+                <li><strong>Languages:</strong> C, Java, Python, JavaScript, HTML, CSS, SQL</li>
+                <li><strong>Libraries:</strong> Python Libraries</li>
+                <li><strong>Database:</strong> Relational Database (MySQL)</li>
+                <li><strong>Areas of Interest:</strong> Web Design and Development</li>
+            </ul>
+    
+            <h3 class="section-header">INTERNSHIP</h3>
+            <ul>
+                <li><strong>Data Analysis (Python Programming)</strong></li>
+                <p><strong>BIT ELECTRONIC SYSTEM, Baramati</strong></p>
+                <p><strong>Duration:</strong> 20 Jan - 05 Feb 2024</p>
+                <p><strong>Mode:</strong> Offline</p>
+                <ul>
+                    <li>Python: A dynamically typed, high-level language renowned for its simplicity and powerful libraries like NumPy and Pandas, crucial for data manipulation in ML.</li>
+                    <li>Developed proficiency in data manipulation, cleaning, and visualization using libraries such as Pandas, NumPy, and Matplotlib.</li>
+                    <li>Gained experience in performing statistical analysis and generating insights from complex datasets.</li>
+                </ul>
+            </ul>
+            <h3 class="section-header">ACHIEVEMENTS & CERTIFICATIONS</h3>
+            <ul>
+                <li>Salesforce Certified Platform Developer | Course (Udemy)</li>
+                <li>Python | Course (Udemy)</li>
+               
+            </ul>
+    
+            <hr>
+    
+            <div class="signature">
+                <div>
+                    <h4><u>Place</u>: Pandharpur</h4>
+                </div>
+                <div style="text-align: right;">
+                    <h4><u>Name</u>: Prajkta Vijay Gaikwad</h4>
+                    <button class="btn-download" onclick="downloadPDF()">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            async function downloadPDF() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF('p', 'mm', 'a4');
+                const resume = document.getElementById('resume');
+    
+                const canvas = await html2canvas(resume, { scale: 2 });
+                const imgData = canvas.toDataURL('image/png');
+    
+                const imgWidth = 210; 
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    
+                doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                doc.save("Resume_Prajkta_Gaikwad.pdf");
+            }
+        </script>
+    
+
+    </div>
+    
+</body>
+</html>
